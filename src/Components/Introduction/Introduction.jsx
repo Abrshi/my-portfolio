@@ -1,9 +1,12 @@
 import React from 'react'
 import introduction from './Introduction.module.css'
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import img1 from '../../assets/009ddc17-7f94-4eeb-b0fb-06acbabb4502.png'
 import img2 from '../../assets/47cac9a8-8e10-4431-9f96-c26cc6c87c27.jpg'
 import img3 from '../../assets/5079723f-0372-49ce-baa8-1b6bdfcf3683.jpg'
 import img4 from '../../assets/6b943e78-8760-45c7-98b2-cd5a2eb5d8a3.png'
+
 
 function Introduction() {
   return (
@@ -21,9 +24,8 @@ function Introduction() {
         <button>Hire Me</button>
         </div>
         <div className={introduction.socials}>
-        <span>L</span>
-        <span>E</span>
-        <span>G</span>
+        <span><a href='http://www.github.com/abrshi'><FaGithub size={25}/></a></span>
+        <span><a href='http://www.github.com/abrshi'><FaLinkedin size={25}/></a></span>
         </div>
     
     </div>
