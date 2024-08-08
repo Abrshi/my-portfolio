@@ -8,6 +8,7 @@ function Header() {
     setIsActive(!isActive);
   };
 
+
   return (
     <div className={`${styles.outerHeader} ${styles.navbar}`}>
       <div className={styles.rightHeader}>
@@ -16,12 +17,11 @@ function Header() {
           <li>
           <div className={styles.latterA}>A</div>
           </li>
-          <li><a href='#'>Abreham Yeshitla</a></li>
+          <li  className={styles.name}><a href='#'>Abreham Yeshitla</a></li>
         </ul>
       </div>
       <div className={styles.leftHeader}>
         <ul className={`${styles.navLinks} ${isActive ? styles.active : ''}`}>
-          <li className={styles.netflexLogo}></li>
           <li className={styles.li}><a href='#'>Home</a></li>
           <li className={styles.li}><a href='#'>Portfolio</a></li>
           <li className={styles.li}><a href='#'>Projects</a></li>

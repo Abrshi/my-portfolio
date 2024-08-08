@@ -24,20 +24,33 @@
   width: 200px;
 }
 
-.netflexLogo > img {
-  height: 15vh;
+.name {
+  width: 300px;
+
 }
 
 li, .menuicon {
   list-style: none;
   justify-content: space-between;
   transition: 350ms;
-  cursor: pointer;
   color: black;
+  width:30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px ;
   
   
 }
 .li:hover{
+  font-size: larger;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 0px;
+  background-color: #0760af;
+}
+.clicked{
   font-size: larger;
   border-radius: 5px;
   color: white;
@@ -56,6 +69,7 @@ li, .menuicon {
   align-items: center;
   height: 35px;
   width: 35px;
+  font-family: fantasy;
 }
 .latterA:hover{
   border: 1px solid;
@@ -84,6 +98,14 @@ li, .menuicon {
 }
 
 @media (max-width: 768px) {
+  
+  .li:hover{
+    font-size: larger;
+    border-radius: 5px;
+    color: white;
+    padding: 4px 40px;
+    background-color: #0760af;
+  }
   .leftHeader > ul {
     justify-content: center;
     width: 300px;
