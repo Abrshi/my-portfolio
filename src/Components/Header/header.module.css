@@ -1,0 +1,174 @@
+.outerHeader {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 0 30px;
+  align-items: center;
+  margin: auto;
+  max-width: 100%;
+  background-color: white;
+}
+
+.leftHeader > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 590px;
+}
+
+.rightHeader > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+.netflexLogo > img {
+  height: 15vh;
+}
+
+li, .menuicon {
+  list-style: none;
+  justify-content: space-between;
+  transition: 350ms;
+  cursor: pointer;
+  color: black;
+  
+  
+}
+.li:hover{
+  font-size: larger;
+  border-radius: 5px;
+  color: white;
+  padding: 4px 50px;
+  background-color: #0760af;
+}
+.latterA{  
+  transition: 350ms;
+  border: 1px solid;
+  border-color: #0760af;
+  border-radius: 15px 0;
+  font-size: large;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+}
+.latterA:hover{
+  border: 1px solid;
+  border-color: #0760af;
+  background-color: #0760af;
+  border-radius: 0 15px;
+  font-size: x-large;
+  color: white;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.navLinks > li {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .leftHeader > ul {
+    justify-content: center;
+    width: 300px;
+  }
+  
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #E1f8fe;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+  }
+
+ 
+
+  .navLinks.active {
+    transform: translateX(0);
+  }
+
+  .navLinks li {
+    margin: 20px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .leftHeader > ul {
+   justify-content: center;
+    width: 400px;
+  }
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 65%;
+    background-color: #E1f8fe;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+ 
+
+  .navLinks.active {
+    transform: translateX(0);
+  }
+
+  .navLinks li {
+    margin: 20px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menuicon, .logoSmScrin {
+    display: none;
+  }
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navLinks.active {
+  transform: translateX(0);
+}
