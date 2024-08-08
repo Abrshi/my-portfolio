@@ -115,5 +115,30 @@
          display: none;
         
         }
+
+        .outer{
+        
+            max-width: 1224px;
+            align-items: center;
+            padding: 0 auto 0 auto;
+            /* gap: 2%; */
+            align-items: center;
+            margin: 30px auto 30px auto;
+        
+        }
        
+.firstSection{
+    max-width: 560px;
+    width:90%;
+    height: fit-content;
+    border-radius: 20px;
+    /* padding: 5px; */
+}
+.secondSection{
+    max-width: 560px;
+    width:90%;
+    height: 350px;
+    border-radius: 20px;
+    /* padding: 5px; */
+}
   }
