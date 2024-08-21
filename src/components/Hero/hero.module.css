@@ -1,0 +1,59 @@
+.hero{
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    background: linear-gradient(180deg,#0c0c1d ,#111132);
+}
+.textAndimg{
+    margin: auto;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    color: rebeccapurple;
+    letter-spacing: 4px;
+}
+.profation{
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+.button2{
+    width: auto;
+height: 40px;
+margin: auto 10px;
+padding: 0 20px;
+background-color: inherit;
+transition: 350ms;
+cursor: pointer;
+    border-color: #fff;
+    border-color: inherit;
+    color:#fff;
+    border-radius: 3px;
+}
+.button1{
+    width: auto;
+height: 40px;
+margin: auto 10px;
+padding: 0 20px;
+background-color: inherit;
+transition: 350ms;
+cursor: pointer;
+    background-color: #fff !important;
+    border-radius: 5px;
+}
+.button2:hover , .button1:hover{
+    scale: calc(1.1);
+    border-radius: 0px;
+}
+.text>img{
+    padding-top: 15px;
+}

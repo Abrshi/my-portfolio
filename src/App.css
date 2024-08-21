@@ -1,0 +1,20 @@
+html{
+  scroll-behavior: inherit;
+  /* scroll-snap-type: y mandatory; */
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body{
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+section{
+  height: 100vh;
+  scroll-snap-align: center;
+}

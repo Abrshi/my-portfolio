@@ -1,0 +1,30 @@
+.header{
+    max-width: 1366px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.info{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    width: 80%;  
+    margin: auto;
+}
+.nav{
+   
+}
+.name{
+    font-weight: bold;
+}
+.socials{
+    display: flex;
+}
+.socials>a>img{
+    width: 18px;
+    height: 18px;
+    padding-left: 10px;
+ }

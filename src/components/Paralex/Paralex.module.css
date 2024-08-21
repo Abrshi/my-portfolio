@@ -1,0 +1,39 @@
+.paralex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.mounten{
+    background-image: url(../../assets/img/mountains.png);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.moon{
+    background-image: url(../../assets/img/sun.png);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.stars{
+    background-image: url(../../assets/img/stars.png);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.title{
+    font-size: 60px;
+}

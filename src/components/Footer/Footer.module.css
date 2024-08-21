@@ -1,0 +1,8 @@
+.Footer{
+    background-color:#CCD5AE;
+height: 100px;
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+}

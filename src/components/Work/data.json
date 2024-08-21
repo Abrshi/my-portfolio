@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Portfolio Website",
+        "background_img": "https://images.app.goo.gl/U46buwG5adC3apZF9",
+        "demo_link": "https://your-portfolio-demo.com",
+        "github_link": "https://github.com/yourusername/portfolio"
+    },
+    {
+        "title": "E-commerce Store",
+        "background_img": "https://images.app.goo.gl/U46buwG5adC3apZF9",
+        "demo_link": "https://your-ecommerce-demo.com",
+        "github_link": "https://github.com/yourusername/ecommerce-store"
+    },
+    {
+        "title": "Task Manager App",
+        "background_img": "https://images.app.goo.gl/U46buwG5adC3apZF9",
+        "demo_link": "https://your-taskmanager-demo.com",
+        "github_link": "https://github.com/yourusername/taskmanager-app"
+    },
+    {
+        "title": "Blog Platform",
+        "background_img": "https://images.app.goo.gl/U46buwG5adC3apZF9",
+        "demo_link": "https://your-blog-demo.com",
+        "github_link": "https://github.com/yourusername/blog-platform"
+    },
+    {
+        "title": "Weather App",
+        "background_img": "https://images.app.goo.gl/U46buwG5adC3apZF9",
+        "demo_link": "https://your-weather-demo.com",
+        "github_link": "https://github.com/yourusername/weather-app"
+    },
+    {
+        "title": "Social Media Dashboard",
+        "background_img": "https://images.app.goo.gl/U46buwG5adC3apZF9",
+        "demo_link": "https://your-socialmedia-demo.com",
+        "github_link": "https://github.com/yourusername/socialmedia-dashboard"
+    }
+]
+
