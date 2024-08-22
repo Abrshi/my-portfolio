@@ -11,8 +11,8 @@
     align-items: center;
     justify-content: center;
     width: 80%;
+    height: 100vh;
     margin: auto;
-    padding-top:  50px;
 }
 .p{
     font-size: 25px;

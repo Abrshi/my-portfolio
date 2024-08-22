@@ -1,6 +1,6 @@
 html{
   scroll-behavior: inherit;
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
 }
 *{
   margin: 0;

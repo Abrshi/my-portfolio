@@ -1,11 +1,19 @@
+import React from "react";
 import Card from "./Card";
-import './work.css'
+import './work.css';
+import projects from './data.json'; // Importing the JSON file
+
 export default function Work() {
-  const items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
   return (
     <div className="App">
-      {items.map((item, i) => (
-        <Card key={i} text={item} index={i} />
+      {projects.map((project, i) => (
+        <Card
+          key={i}
+          title={project.title}
+          background_img={project.background_img}
+          demo_link={project.demo_link}
+          github_link={project.github_link}
+        />
       ))}
     </div>
   );

@@ -1,23 +1,33 @@
+/* work.css */
+
 .card {
-  width: 50vw;
-  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-gap: 20px;
+}
+
+.item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 0px 10px 10px 10px;
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #333;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  border: 1px solid #ccc; /* Optional: border around each item */
+  border-radius: 8px; /* Optional: rounded corners */
+  padding: 16px; /* Padding inside each item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow for a subtle 3D effect */
 }
 
-.card:nth-child(odd) {
-  align-self: flex-end;
-  background-color: #120443;
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Optional: rounded corners for the image */
 }
 
-.card-text {
-  font-size: 28px;
-  color: #fff;
+.item a {
+  margin: 8px; /* Space between links */
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.item a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
