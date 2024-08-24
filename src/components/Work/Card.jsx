@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import './work.css'
+import styles from './work.module.css'
 
 function Card({ title, background_img, demo_link, github_link }) {
   
   return (
     <motion.div
-      className="card"
+      className={styles.cardprops}
       initial={{
         opacity: 0,
     
@@ -24,11 +24,11 @@ function Card({ title, background_img, demo_link, github_link }) {
     >
     
 
-      <div className="item">
+      <div className={styles.itms}>
 
       <h1>{title}</h1>
        <img src={background_img} alt="img" />
-       <div>  <a href={github_link}>github_link</a>   <a href={demo_link}>demo_link</a></div>
+       <div>  <a href={github_link} className={styles.a}>github_link</a>   <a href={demo_link} className={styles.a}>demo_link</a></div>
 
 
       </div>

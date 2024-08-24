@@ -5,6 +5,7 @@
     justify-content: center;
     margin: auto;
     width: auto;
+    height: 100vh;
 }
 .about>div{
     display: flex;

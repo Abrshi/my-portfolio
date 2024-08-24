@@ -1,0 +1,28 @@
+/* work.css */
+
+.works {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.cardprops{
+  width: 400px;
+}
+.item img {
+  width: 300px;
+  height: 400;
+  margin-bottom: 20px;
+  border-radius: 20px; 
+  background-color: #073569;
+}
+
+.a {
+  margin: 8px; /* Space between links */
+  color: #3cff00; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

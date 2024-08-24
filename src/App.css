@@ -1,6 +1,6 @@
 html{
   scroll-behavior: inherit;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 *{
   margin: 0;
@@ -17,4 +17,8 @@ body{
 section{
   height: 100vh;
   scroll-snap-align: center;
+}
+
+#work{
+  height: auto;
 }

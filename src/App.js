@@ -1,4 +1,3 @@
-
 import './App.css';
 import Header from './components/Header/Header';
 import AboutMe from './components/AboutMe/AboutMe';
@@ -8,15 +7,17 @@ import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import Paralex from './components/Paralex/Paralex';
+
 function App() {
   return (
     <div className="App">
-       <section id='home'>
-      <Header /> 
-     <Hero /> </section>
-     <section> <Paralex title='About Me'/> </section>
+      <section id='home'>
+          <Header /> 
+          <Hero /> 
+      </section>
+      <section> <Paralex title='About Me'/> </section>
       <section id='aboutme'><AboutMe/></section>
-      <section> <Paralex title='My Skils'/> </section>
+      <section id ='mySkils'> <Paralex title='My Skils'/> </section>
       <section id='skils'> <Skil /></section>
       <section> <Paralex title='Projects'/> </section>
       <section id='work'> <Work/> </section>
