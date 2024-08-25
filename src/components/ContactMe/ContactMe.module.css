@@ -68,3 +68,15 @@
     scale: 0.95;
 
 }
+.successMessage {
+    color: green;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
