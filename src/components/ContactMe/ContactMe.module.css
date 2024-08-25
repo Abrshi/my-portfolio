@@ -83,6 +83,7 @@
      .contactMe{
         flex-direction: column;
         height: 95vh;
+        gap: 0;
      }
      .textContener{
         display: flex;
@@ -91,14 +92,14 @@
         width: 400px;
     }
     .textContener>h1{
-        font-size: 30px;
+        font-size: 40px;
         line-height: 20px;
     }
     .h3{
-        font-size: small;
+        font-size: large;
     }
     .h5{
-        font-size: x-small;
+        font-size: small;
     }
     
     .formContener> form {
@@ -109,11 +110,7 @@
     }
     .text,.email{
         width: 96%;
-        height: 40px;
+        height: 60px;
         
     }
-}
-@media (max-width: 768px) {
-   
-
 }
