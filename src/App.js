@@ -21,10 +21,11 @@ function App() {
       <section id='skils'> <Skil /></section>
       <section> <Paralex title='Projects'/> </section>
       <section id='work'> <Work/> </section>
-      <section>Paralerx </section>
+      <section> <Paralex title='Contact'/> </section>
       <section id='contact'><ContactMe/> </section>
       <section>Paralerx </section>
       <section><Footer/> </section>
+      
     </div>
   );
 }

@@ -1,0 +1,70 @@
+.contactMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.textContener{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    width: 400px;
+}
+.textContener>h1{
+    font-size: 60px;
+    line-height: 50px;
+}
+.h3{
+    font-size: larger;
+}
+.h5{
+    font-size: small;
+}
+
+.formContener> form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+}
+.text,.email{
+    width: 96%;
+    height: 40px;
+    background-color: transparent;
+    border-color: #fff;
+    border-radius: 5px;
+    color: antiquewhite;
+    font-size: large;
+    padding-left: 10px;
+}
+.content{
+    background-color: transparent;
+    border-color: #fff;
+    border-radius: 5px; 
+    color: antiquewhite;
+    font-size: large;
+    padding: 10px;
+    position: relative;
+}
+.contactsvg{
+    position: absolute;
+    stroke: orange;
+}
+.submit{
+    background-color: orange;
+    border-color: orange;
+    color: antiquewhite;
+    font-size: large;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    transition: 0.350s;
+}
+.submit:hover{
+    background-color: rgb(255, 166, 0);
+    border-color: rgb(255, 102, 0);
+    scale: 0.95;
+
+}

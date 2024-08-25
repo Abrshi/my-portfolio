@@ -20,20 +20,13 @@ function Card({ title, background_img, demo_link, github_link }) {
           duration: 1 // Animation duration
         }
       }}
-      viewport={{ once: true }}
-    >
-    
+      viewport={{ once: true }}>
 
       <div className={styles.itms}>
-
       <h1>{title}</h1>
-       <img src={background_img} alt="img" />
-       <div>  <a href={github_link} className={styles.a}>github_link</a>   <a href={demo_link} className={styles.a}>demo_link</a></div>
-
-
+       <img src={background_img} alt="img" className={styles.img}/>
+       <div><a href={github_link} className={styles.a} target="_blank" >github_link</a>   <a href={demo_link} className={styles.a} target="_blank" >demo_link</a></div>
       </div>
-
-
     </motion.div>
   );
 }
