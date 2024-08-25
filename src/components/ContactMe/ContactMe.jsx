@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import style from './ContactMe.module.css';
 import { motion, useInView } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import Footer from './../Footer/Footer';
 
 const variants = {
   initial: {
@@ -43,7 +44,8 @@ function ContactMe() {
   };
 
   return (
-    <div className={style.contactMe} ref={ref}>
+    <div>
+      <div className={style.contactMe} ref={ref}>
       <motion.div
         className={style.textContener}
         variants={variants}
@@ -98,6 +100,9 @@ function ContactMe() {
           </div>
         )}
       </div>
+    </div>
+    
+    <Footer/>
     </div>
   );
 }

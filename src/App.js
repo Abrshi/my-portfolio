@@ -4,7 +4,6 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Skil from './components/Skil/Skil'
 import Work from './components/Work/Work';
 import ContactMe from './components/ContactMe/ContactMe';
-import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import Paralex from './components/Paralex/Paralex';
 
@@ -23,8 +22,7 @@ function App() {
       <section id='work'> <Work/> </section>
       <section> <Paralex title='Contact'/> </section>
       <section id='contact'><ContactMe/> </section>
-      <section>Paralerx </section>
-      <section><Footer/> </section>
+   
       
     </div>
   );

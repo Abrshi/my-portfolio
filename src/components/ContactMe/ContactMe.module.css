@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+    height: 90vh;
 }
 .textContener{
     display: flex;
@@ -32,7 +33,7 @@
 .text,.email{
     width: 96%;
     height: 40px;
-    background-color: transparent;
+    background-color: #0c0c1d;
     border-color: #fff;
     border-radius: 5px;
     color: antiquewhite;
