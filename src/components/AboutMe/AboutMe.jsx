@@ -6,10 +6,10 @@ function AboutMe() {
     <div className={style.about}> 
       <div>
           <h1 className={style.h1}>
-          This is <span className={style.name}>Abreham Yeshitla </span>, a web developer from Addis Abeba:Ethiopia. Thank you for taking the time to visit my portfolio website.
+          This is <span className={style.name}>Abreham Yeshitla </span>, a web developer based in Addis Ababa, Ethiopia. Thank you for visiting my portfolio website.
           </h1>
           <p className={style.p}>
-          A software developer with experience in building responsive and scalable web apps. I am well-knowledged in UI/UX principles and practices. I believe that a website is more than just a collection of web pages; it should be a reflection of the brand or individual it represents. I bring a strong foundational understanding of computer science concepts and programming languages to each project I work on. Whether working collaboratively or individually, I’m committed to taking each task with persistence and striving towards delivering the best possible product.</p>
+          I am a software developer with a focus on building responsive and scalable web applications. I believe a website should be more than a series of pages—it should authentically reflect the brand or individual it represents. With a solid grounding in computer science principles and programming languages, I approach every project with a commitment to excellence. Whether working collaboratively or independently, I am dedicated to delivering high-quality results through perseverance and meticulous attention to detail.</p>
          
       </div>
     </div>

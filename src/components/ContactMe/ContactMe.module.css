@@ -79,4 +79,41 @@
     font-size: 1rem;
     margin-top: 1rem;
   }
-  
+  @media (max-width: 1024px) {
+     .contactMe{
+        flex-direction: column;
+        height: 95vh;
+     }
+     .textContener{
+        display: flex;
+        gap: 10px;
+        height: 70vh;
+        width: 400px;
+    }
+    .textContener>h1{
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .h3{
+        font-size: small;
+    }
+    .h5{
+        font-size: x-small;
+    }
+    
+    .formContener> form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 7px;
+    }
+    .text,.email{
+        width: 96%;
+        height: 40px;
+        
+    }
+}
+@media (max-width: 768px) {
+   
+
+}
