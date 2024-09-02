@@ -2,7 +2,6 @@ import React from "react";
 import Card from "./Card";
 import style from'./work.module.css';
 import projects from './data.json'; // Importing the JSON file
-
 export default function Work() {
   return (
     <div className={style.works}>

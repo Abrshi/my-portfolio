@@ -46,6 +46,35 @@ function ContactMe() {
   return (
     <div>
       <div className={style.contactMe} ref={ref}>
+
+      <div className={style.formContener}>
+        <motion.div
+          className={style.contactsvg}
+          initial={{ pathLength: 0 }}
+          animate={isInView && { pathLength: 1 }}
+          transition={{ duration: 3 }}
+        >
+        </motion.div>
+        <motion.form
+          ref={formRef}
+          className={style.form}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 1 }}
+          onSubmit={sendEmail}
+        >
+          <input className={style.text} type="text" placeholder="Name" name="from_name" required />
+          <input className={style.email} type="email" placeholder="Email" name="reply_to" required />
+          <textarea className={style.content} type="text" rows="6" placeholder="Message" name="message" required />
+          <input className={style.submit} type="submit" value="Send" />
+        </motion.form>
+        {message && (
+          <div className={isError ? style.errorMessage : style.successMessage}>
+            {message}
+          </div>
+        )}
+      </div>
+      
       <motion.div
         className={style.textContener}
         variants={variants}
@@ -72,34 +101,7 @@ function ContactMe() {
           </span>
         </motion.h3>
       </motion.div>
-      <div className={style.formContener}>
-        <motion.div
-          className={style.contactsvg}
-          initial={{ pathLength: 0 }}
-          animate={isInView && { pathLength: 1 }}
-          transition={{ duration: 3 }}
-        >
-          {/* Optional SVG animation */}
-        </motion.div>
-        <motion.form
-          ref={formRef}
-          className={style.form}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-          onSubmit={sendEmail}
-        >
-          <input className={style.text} type="text" placeholder="Name" name="from_name" required />
-          <input className={style.email} type="email" placeholder="Email" name="reply_to" required />
-          <textarea className={style.content} type="text" rows="6" placeholder="Message" name="message" required />
-          <input className={style.submit} type="submit" value="Send" />
-        </motion.form>
-        {message && (
-          <div className={isError ? style.errorMessage : style.successMessage}>
-            {message}
-          </div>
-        )}
-      </div>
+  
     </div>
     
     <Footer/>

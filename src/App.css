@@ -8,6 +8,9 @@ html{
   /* overflow-x:hidden ; */
 
 }
+body {
+  cursor: url('./assets/img/curser.png'), auto;
+}
 a{
   text-decoration: none;
   color: inherit;
