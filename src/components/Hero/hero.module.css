@@ -54,8 +54,16 @@ cursor: pointer;
     scale: calc(1.1);
     border-radius: 0px;
 }
+.scroll{
+    transition: 250ms;
+}
+
 .text>img{
     padding-top: 15px;
+    transition: 250ms;
+}
+.scroll:hover{
+    scale: calc(1.1);
 }
 @media (max-width: 1024px) {
     .textAndimg{

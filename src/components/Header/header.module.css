@@ -23,8 +23,21 @@
 .socials{
     display: flex;
 }
+.socials {
+    display: flex;
+}
+
 .socials>a>img{
-    width: 18px;
-    height: 18px;
+    width: 35px;
+    height: 35px;
     padding-left: 10px;
  }
+.socials>a>img:hover{
+    transform: scale(1.1); /* Adjust scale factor as needed */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.socials>a>img:active {
+    transform: scale(.9); /* Adjust scale factor as needed */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}

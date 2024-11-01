@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import herocss from './hero.module.css';
 import profile from '../../assets/img/profile.png';
 import scroll from '../../assets/img/scroll.png';
+import cv from '../../assets/Abreham-Yeshitila-CV.pdf'
 
 function Hero() {
   return (
@@ -16,10 +17,10 @@ function Hero() {
           <div className={herocss.name}>Abreham Yeshitla</div>
           <div className={herocss.profation}>Full Stack <br/>Web Developer</div>
           <div lassName={herocss.buttons}>
-            <button className={herocss.button1}>Latest Work</button>
-            <button className={herocss.button2}> My CV</button>
+          <a href="#work"><button className={herocss.button1}>Latest Work</button></a>
+           <a href={cv}> <button className={herocss.button2}> My CV</button></a>
           </div>
-          <img src={scroll} alt="scroll" />
+          <a href="#aboutme"><img src={scroll} className={herocss.scroll} alt="scroll" /></a>
         </div>
         <div 
         
