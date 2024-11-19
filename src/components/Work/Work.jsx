@@ -43,7 +43,7 @@ export default function Work() {
         title={"Free Book Store"}
         background_img={Book}
         demo_link={"https://csbookstore.netlify.app/"}
-        github_link={"https://github.com/Abrshi/apple.com"}
+        github_link={"https://github.com/Abrshi/bookfrontend"}
       />
        
     </div>
