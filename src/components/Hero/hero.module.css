@@ -65,6 +65,10 @@ cursor: pointer;
 .scroll:hover{
     scale: calc(1.1);
 }
+.profile{
+    width: 300px;
+    height: auto;
+}
 @media (max-width: 1024px) {
     .textAndimg{
       flex-direction: column;

@@ -25,7 +25,7 @@ function Hero() {
         <div 
         
         className={herocss.img}>
-          <img src={profile} alt="profile" />
+          <img className={herocss.profile} src={profile} alt="profile" />
         </div>
       </div>
     </motion.div>
