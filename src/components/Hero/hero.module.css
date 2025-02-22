@@ -61,6 +61,7 @@ cursor: pointer;
 .text>img{
     padding-top: 15px;
     transition: 250ms;
+   
 }
 .scroll:hover{
     scale: calc(1.1);
@@ -69,6 +70,7 @@ cursor: pointer;
     width: 300px;
     height: auto;
     border-radius: 100px;
+    margin-top: -50px;
 }
 @media (max-width: 1024px) {
     .textAndimg{
