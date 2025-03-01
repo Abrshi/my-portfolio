@@ -24,14 +24,11 @@
     display: flex;
 }
 .socials {
+    font-size: 30px;
     display: flex;
-}
+    gap: 20px;
 
-.socials>a>img{
-    width: 35px;
-    height: 35px;
-    padding-left: 10px;
- }
+}
 .socials>a>img:hover{
     transform: scale(1.1); /* Adjust scale factor as needed */
     transition: transform 0.2s ease-in-out; /* Smooth transition */
