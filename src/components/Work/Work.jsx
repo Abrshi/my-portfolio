@@ -29,7 +29,7 @@ export default function Work() {
          <Card
           className={style.cared}
           title={"E-commerce"}
-          background_img={Netflix}
+          background_img={ecommerce}
           demo_link={"https://abrshi-ecommerce.netlify.app"}
           github_link={"https://github.com/Abrshi/ecommerce"}
         />
@@ -43,7 +43,7 @@ export default function Work() {
         <Card
           className={style.cared}
           title={"Netflex"}
-          background_img={ecommerce}
+          background_img={Netflix}
           demo_link={"https://abrshi.github.io/netflixx/"}
           github_link={"https://github.com/Abrshi/netflixx"}
         />
@@ -54,13 +54,13 @@ export default function Work() {
           demo_link={"https://appldotcom.netlify.app/"}
           github_link={"https://github.com/Abrshi/apple.com"}
         /> 
-         <Card
+         {/* <Card
         className={style.cared}
         title={"Free Book Store"}
         background_img={Book}
         demo_link={"https://csbookstore.netlify.app/"}
         github_link={"https://github.com/Abrshi/bookfrontend"}
-      />
+      /> */}
        
     </div>
   );
