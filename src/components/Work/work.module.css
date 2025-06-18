@@ -1,42 +1,73 @@
-.works {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-}
-.cardprops{
-  width: 400px;
-}
-.item img {
-  width: 300px;
-  height: 400px;
-  margin-bottom: 20px;
-  border-radius: 20px; 
-  background-color: #073569;
-}
-.a {
-  margin: 8px; 
-  color: rgb(255, 187, 62); 
-  text-decoration: none; 
-  margin: 13px;
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid;
-  transition: 350ms;
-}
-.a:hover {
-  background-color: rgb(255, 187, 62); 
-  color: black;
-}
-.img{
-  width: 300px;
-  height: 300px;
-  margin-bottom: 20px;
-}
-.itms{
+.section {
+  height: 90vh;
+  margin-top: 10vh;
+  position: sticky;
+  top: 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  /* background-color: #ffffff; solid, non-transparent background */
+  z-index: 1;
+  padding: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.content {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.image {
+  width: 100%;
+  max-height: 600px;
+  aspect-ratio: 1 / 1; /* forces square shape */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background-color: #ddd;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #ffbb3e;
+  color: #ffbb3e;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.link:hover {
+  background-color: #ffbb3e;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .image {
+    max-height: 400px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
 }

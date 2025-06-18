@@ -1,33 +1,33 @@
-import React from "react";
-import { motion } from "framer-motion";
-import styles from './work.module.css'
+// Card.jsx
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import styles from "./work.module.css";
 
 function Card({ title, background_img, demo_link, github_link }) {
-  
-  return (
-    <motion.div
-      className={styles.cardprops}
-      initial={{
-        opacity: 0,
-    
-      }}
-      
-      
-      whileInView={{
-        opacity: 1,
-        x: 0, // Slide in to its original position
-        transition: {
-          duration: 1 // Animation duration
-        }
-      }}
-      viewport={{ once: true }}>
+  const ref = useRef();
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "start start"],
+  });
 
-      <div className={styles.itms}>
-      <h1>{title}</h1>
-       <img src={background_img} alt="img" className={styles.img}/>
-       <div><a href={github_link} className={styles.a} target="_blank" >github_link</a>   <a href={demo_link} className={styles.a} target="_blank" >demo_link</a></div>
+  const scale = useTransform(scrollYProgress, [0, 1], [0.95, 1]);
+  const opacity = useTransform(scrollYProgress, [1, 1], [1, 1]);
+
+  return (
+    <motion.section
+      ref={ref}
+      className={styles.section}
+      style={{ scale, opacity }}
+    >
+      <div className={styles.content}>
+        <h1 className={styles.title}>{title} <div className={styles.links}>
+          <a href={github_link} className={styles.link} target="_blank" rel="noreferrer">GitHub</a>
+          <a href={demo_link} className={styles.link} target="_blank" rel="noreferrer">Live Demo</a>
+        </div></h1>
+        <img src={background_img} alt={title} className={styles.image} />
+       
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
 
